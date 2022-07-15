@@ -1,8 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Salesgo app</title>
+    </head>
+    <body>
+        <h1>A project that calculates income/outcome goods in a warehouse</h1>
+        <h2>Welcome</h2>
 
-<head>
-    <title>Salesgo app</title>
-</head>
-<body>
-    <h1>A project that calculates income/outcome goods in a warehouse</h1>
-    <h2>Welcome</h2>
-</body>
+        <div id="app">
+            {{ greeting }}
+        </div> 
+
+        <script src="https://unpkg.com/vue@next"></script>
+        <script>
+           let app = Vue.createApp({ 
+                data: function() {
+                    return {
+                        greeting: "Hello Vue 3 !"
+
+                    }
+                } 
+            }) 
+           app.mount('#app')
+        </script>
+    </body>
+</html>
